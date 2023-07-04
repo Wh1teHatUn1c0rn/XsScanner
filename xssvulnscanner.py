@@ -41,3 +41,5 @@ def unicorn_crew_scan(url):
             print("-----------------")
         else:
             print("No vulnerabilities found")
+
+            unicorn_crew_scan("url")
