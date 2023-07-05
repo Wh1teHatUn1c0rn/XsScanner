@@ -17,7 +17,7 @@ def unicorn_crew_scan(url):
 
     # Iterate over each input field and inject a malicious payload
     for field in form_fields:
-        # Create a payload by injecting a simple XSS script
+        # Create a payload by injecting a XSS script
         payloads = [
             "<script>alert('XSS Vulnerability Found!');</script>",
             "';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//--></SCRIPT>\">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>",
